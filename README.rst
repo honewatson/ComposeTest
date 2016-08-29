@@ -63,7 +63,7 @@ From here composet will generate a module with functions, docs, and tests.
                """Adds a car value to the Object"""
                pass
 
-          main = compose(addCarValue, newObj)
+          main = toolz.compose(addCarValue, newObj)
 
 
 Credits
