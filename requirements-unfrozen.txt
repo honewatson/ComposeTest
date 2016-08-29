@@ -1,4 +1,0 @@
-# Testing requirements
-coverage
-flake8
-pytest
