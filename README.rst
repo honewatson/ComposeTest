@@ -30,20 +30,20 @@ Features
 
 Create a yaml file called example.yaml with function names and docs.
 
-.. highlight:: yaml
+     .. code-block:: yaml
 
-     config:
-          parameter_name: obj
-     newObj:
-          doc: Creates a copy of the passed in object
-     addCarValue:
-          doc: Adds a car value to the Object
+          config:
+               parameter_name: obj
+          newObj:
+               doc: Creates a copy of the passed in object
+          addCarValue:
+               doc: Adds a car value to the Object
 
 Run the command composet against the example.yaml file with the language output.
 
-.. highlight:: bash
+     .. code-block:: bash
 
-     composet python example.yaml
+          composet python example.yaml
 
 From here composet will generate a module with functions, docs, and tests.
 
@@ -51,19 +51,19 @@ From here composet will generate a module with functions, docs, and tests.
 - example/example.py
 - tests/test_example.py
 
-.. highlight:: python
+     .. code-block:: python
 
-     import toolz
+          import toolz
 
-     def newObj(obj):
-          """Creates a copy of the passed in object"""         
-          pass
-    
-     def addCarValue(obj):
-          """Adds a car value to the Object"""
-          pass
+          def newObj(obj):
+               """Creates a copy of the passed in object"""         
+               pass
+         
+          def addCarValue(obj):
+               """Adds a car value to the Object"""
+               pass
 
-     main = compose(addCarValue, newObj)
+          main = compose(addCarValue, newObj)
 
 
 Credits
